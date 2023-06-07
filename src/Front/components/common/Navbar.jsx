@@ -7,7 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function NavbarComponent() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" sticky="top">
       <Container fluid>
         <Navbar.Brand href="#">LOGO</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -19,21 +19,18 @@ function NavbarComponent() {
           >
             <Nav.Link href="#action1">Los proyectos</Nav.Link>
             <Nav.Link href="#action2">Contacto</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+            <NavDropdown title="Categorías" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="#action3">Profesores</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
-                Another action
+                Alumnos
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action5">
-                Something else here
+                Centros
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#" disabled>
-              Link
-            </Nav.Link>
           </Nav>
-          <Form className="d-flex">
+          <Form className="d-flex me-1">
             <Form.Control
               type="search"
               placeholder="Quiero ver..."
@@ -42,6 +39,7 @@ function NavbarComponent() {
             />
             <Button variant="outline-success">Buscar</Button>
           </Form>
+          <div className="bg-dark text-light">USER</div>
         </Navbar.Collapse>
       </Container>
     </Navbar>
