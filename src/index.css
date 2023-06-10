@@ -1,0 +1,63 @@
+/*GENERALES*/
+:root {
+    --transition: all 0.5s ease;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*CABECERA*/
+#cabecera {
+    background: linear-gradient(rgba(0, 0, 0, 0.904), rgba(0, 0, 0, 0.671)), url(/src/assets/images/img_1250.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*SOBRE MARCA PERSONAL*/
+.cajaIcono {
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(158, 31, 31);
+    color: white;
+    flex: none;
+}
+
+.utilidades {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.utilidades::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: rgba(197, 51, 51, 0.2);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: var(--transition);
+}
+
+.utilidades:hover::after {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(158, 31, 31);
+    z-index: -1;
+}
+
+.utilidades:hover h5,
+.utilidades:hover p{
+    color: white;
+}
+
+.utilidades:hover .cajaIcono {
+    background-color: rgb(202, 145, 145);
+    color: white;
+}
