@@ -1,3 +1,5 @@
+import AllOutIcon from '@mui/icons-material/AllOut';
+
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -9,7 +11,9 @@ function NavbarComponent() {
   return (
     <Navbar bg="light" expand="lg" sticky="top">
       <Container fluid>
-        <Navbar.Brand href="#">LOGO</Navbar.Brand>
+        <Navbar.Brand href="#">
+          <AllOutIcon sx={{fontSize: 40}}></AllOutIcon>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
