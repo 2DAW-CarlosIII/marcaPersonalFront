@@ -1,4 +1,5 @@
-import AllOutIcon from '@mui/icons-material/AllOut';
+import logo from '../../../assets/images/mp-logo-light.svg';
+import AccountBoxIcon from '@mui/icons-material/AccountBox';
 
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
@@ -9,10 +10,12 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function NavbarComponent() {
   return (
-    <Navbar bg="light" expand="lg" sticky="top">
+    <Navbar style={{backgroundColor: 'var(--grey700)'}} expand="lg" fixed="top" data-bs-theme="dark">
       <Container fluid>
         <Navbar.Brand href="#">
-          <AllOutIcon sx={{fontSize: 40}}></AllOutIcon>
+          <div style={{width: 'auto', height: '40px'}}>
+            <img src={logo} alt="" style={{width: '100%', height: '100%'}}/>
+          </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -34,7 +37,7 @@ function NavbarComponent() {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <Form className="d-flex me-1">
+          <Form className="d-flex me-1 gap-2">
             <Form.Control
               type="search"
               placeholder="Quiero ver..."
@@ -42,6 +45,7 @@ function NavbarComponent() {
               aria-label="Search"
             />
             <Button variant="outline-success">Buscar</Button>
+            <AccountBoxIcon sx={{ color: 'var(--grey)' }} fontSize='large'></AccountBoxIcon>
           </Form>
         </Navbar.Collapse>
       </Container>
