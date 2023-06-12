@@ -1,3 +1,6 @@
+import logo from '../../../assets/images/mp-logo-light.svg';
+import PersonIcon from '@mui/icons-material/Person';
+
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -7,9 +10,13 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function NavbarComponent() {
   return (
-    <Navbar bg="light" expand="lg" sticky="top">
+    <Navbar style={{backgroundColor: 'var(--grey700)'}} expand="lg" fixed="top" data-bs-theme="dark">
       <Container fluid>
-        <Navbar.Brand href="#">LOGO</Navbar.Brand>
+        <Navbar.Brand href="#">
+          <div style={{width: 'auto', height: '40px'}}>
+            <img src={logo} alt="" style={{width: '100%', height: '100%'}}/>
+          </div>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -18,7 +25,6 @@ function NavbarComponent() {
             navbarScroll
           >
             <Nav.Link href="#action1">Los proyectos</Nav.Link>
-            <Nav.Link href="#action2">Contacto</Nav.Link>
             <NavDropdown title="Categorías" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Profesores</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
@@ -29,17 +35,20 @@ function NavbarComponent() {
                 Centros
               </NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link href="#footer">Contacto</Nav.Link>
           </Nav>
-          <Form className="d-flex me-1">
+          <Form className="d-flex me-1 gap-2">
             <Form.Control
               type="search"
               placeholder="Quiero ver..."
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success">Buscar</Button>
+            <Button variant="outline-light">Buscar</Button>
+            <Button variant="light" className='d-flex gap-1'>
+              <PersonIcon></PersonIcon>
+            </Button>
           </Form>
-          <div className="bg-dark text-light">USER</div>
         </Navbar.Collapse>
       </Container>
     </Navbar>
