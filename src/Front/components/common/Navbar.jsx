@@ -1,5 +1,5 @@
 import logo from '../../../assets/images/mp-logo-light.svg';
-import AccountBoxIcon from '@mui/icons-material/AccountBox';
+import PersonIcon from '@mui/icons-material/Person';
 
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
@@ -25,7 +25,6 @@ function NavbarComponent() {
             navbarScroll
           >
             <Nav.Link href="#action1">Los proyectos</Nav.Link>
-            <Nav.Link href="#action2">Contacto</Nav.Link>
             <NavDropdown title="Categorías" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Profesores</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
@@ -36,6 +35,7 @@ function NavbarComponent() {
                 Centros
               </NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link href="#footer">Contacto</Nav.Link>
           </Nav>
           <Form className="d-flex me-1 gap-2">
             <Form.Control
@@ -44,8 +44,10 @@ function NavbarComponent() {
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success">Buscar</Button>
-            <AccountBoxIcon sx={{ color: 'var(--grey)' }} fontSize='large'></AccountBoxIcon>
+            <Button variant="outline-light">Buscar</Button>
+            <Button variant="light" className='d-flex gap-1'>
+              <PersonIcon></PersonIcon>
+            </Button>
           </Form>
         </Navbar.Collapse>
       </Container>
