@@ -1,8 +1,9 @@
-import AllOutIcon from '@mui/icons-material/AllOut';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+
+import logo from '../../../assets/images/mp-logo-light.svg';
 
 function FooterComponent() {
 
@@ -11,9 +12,10 @@ function FooterComponent() {
         <footer className="py-5 text-white">
             <div className="footer-top my-4">
                 <div className="container">
-                    <div className="row">
+                    <div className="row g-4">
                         <div className="col-12 col-lg-4">
-                            <AllOutIcon sx={{fontSize: 70}} className='mb-3' id="footer-icon"></AllOutIcon>
+                        {/* className='mb-3' id="footer-icon" */}
+                            <img src={logo} alt="" className='mb-3' id="footer-icon"/>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi earum atque consequuntur suscipit.</p>
                             <div className="social-links d-flex gap-2">
                                 <a href=""><FacebookIcon></FacebookIcon></a>

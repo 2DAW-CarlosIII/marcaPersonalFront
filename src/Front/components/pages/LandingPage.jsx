@@ -1,7 +1,6 @@
-import imageAbout from "../../../assets/images/img_1268.jpg";
-import imageAbout2 from "../../../assets/images/img_1231.jpg";
-import imageAbout3 from "../../../assets/images/img_1250.jpg";
-import imageAbout4 from "../../../assets/images/img_1284.jpg";
+import jugadores from "../../../assets/images/jugadores.jpg";
+import pasillo from "../../../assets/images/pasillo-gente.jpg";
+import escaleras from "../../../assets/images/escaleras.jpg";
 
 import FormularioRegistro from "../common/Formulario";
 
@@ -106,7 +105,7 @@ function LandingPage() {
                 <div className="col-12 col-md-6" id="prueba">
                     <div className="last-post d-flex shadow">
                         <div className="img-last-post">
-                            <img src={imageAbout2} alt=""/>
+                            <img src={jugadores} alt=""/>
                         </div>
                         <div className="last-post-content p-4">
                             <p>25 de abril, 2023</p>
@@ -121,7 +120,7 @@ function LandingPage() {
                 <div className="col-12 col-md-6">
                     <div className="last-post d-flex shadow">
                         <div className="img-last-post">
-                            <img src={imageAbout} alt=""/>
+                            <img src={pasillo} alt=""/>
                         </div>
                         <div className="last-post-content p-4">
                             <p>25 de abril, 2023</p>
@@ -136,7 +135,7 @@ function LandingPage() {
                 <div className="col-12 col-md-6">
                     <div className="last-post d-flex shadow">
                         <div className="img-last-post">
-                            <img src={imageAbout3} alt=""/>
+                            <img src={pasillo} alt=""/>
                         </div>
                         <div className="last-post-content p-4">
                             <p>17 de abril, 2023</p>
@@ -151,7 +150,7 @@ function LandingPage() {
                 <div className="col-12 col-md-6">
                     <div className="last-post d-flex shadow">
                         <div className="img-last-post">
-                            <img src={imageAbout4} alt=""/>
+                            <img src={escaleras} alt=""/>
                         </div>
                         <div className="last-post-content p-4">
                             <p>12 de marzo, 2023</p>
