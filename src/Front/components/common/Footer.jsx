@@ -9,13 +9,12 @@ function FooterComponent() {
 
     return (
         <>
-        <footer className="py-5 text-white">
+        <footer className="py-5 text-white" id="footer">
             <div className="footer-top my-4">
                 <div className="container">
                     <div className="row g-4">
                         <div className="col-12 col-lg-4">
-                        {/* className='mb-3' id="footer-icon" */}
-                            <img src={logo} alt="" className='mb-3' id="footer-icon"/>
+                            <a href="#"><img src={logo} alt="" className='mb-3' id="footer-icon"/></a>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi earum atque consequuntur suscipit.</p>
                             <div className="social-links d-flex gap-2">
                                 <a href=""><FacebookIcon></FacebookIcon></a>

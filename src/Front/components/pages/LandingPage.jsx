@@ -66,7 +66,7 @@ function LandingPage() {
                         <div className="cajaIcono mb-4">
                             <LocationCityIcon sx={{fontSize: 30}}></LocationCityIcon>
                         </div>
-                        <h5 className="fw-semibold mb-3">¿Y si no estoy registrado?</h5>
+                        <h5 className="fw-semibold mb-3">Empresas</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi vero excepturi ab.</p>
                     </div>
                 </div>

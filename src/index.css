@@ -14,6 +14,12 @@
     --grey100: rgba(36, 36, 36, 0.301);
     --grey: rgba(255, 255, 255, 0.658);
     --white: white;
+
+    --body-bg: white;
+}
+
+body {
+    background: var(--body-bg);
 }
 
 img {
@@ -44,6 +50,20 @@ a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    position: relative;
+}
+
+#cabecera::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background: var(--body-bg);
+    bottom: 0;
+    -webkit-mask-image: url(/src/assets/images/pattern/triangle.svg);
+    mask-image: url(/src/assets/images/pattern/triangle.svg);
+    transform: rotate(.5turn);
 }
 
 /*SOBRE MARCA PERSONAL*/
@@ -128,6 +148,18 @@ a:hover {
 #contacto {
     position: relative;
     z-index: 2;
+}
+
+#contacto::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background: var(--body-bg);
+
+    top: 0;
+    -webkit-mask-image: url(/src/assets/images/pattern/triangle.svg);
+    mask-image: url(/src/assets/images/pattern/triangle.svg);
 }
 
 #contacto::after {
