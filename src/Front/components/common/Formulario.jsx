@@ -1,3 +1,5 @@
+import DoneIcon from '@mui/icons-material/Done';
+
 function FormularioRegistro() {
 
     return (
@@ -59,7 +61,16 @@ function FormularioRegistro() {
                             </select>
                         </div>
                         <div className="form-group col-12 col-md-4 offset-md-4 d-grid">
-                            <button type="button" className="mt-4 btn btn-primary d-flex justify-content-center gap-1">¡Registrarme!</button>
+                            <a href="#" className="d-flex justify-content-center">
+                                <button className="button-82-pushable mt-5 d-flex justify-content-center gap-1" role="button">
+                                    <span className="button-82-shadow"></span>
+                                    <span className="button-82-edge"></span>
+                                    <span className="button-82-front text d-flex gap-2">
+                                        Registrarse
+                                        <DoneIcon></DoneIcon>
+                                    </span>
+                                </button>
+                            </a>
                         </div>
                     </form>
                 </div>

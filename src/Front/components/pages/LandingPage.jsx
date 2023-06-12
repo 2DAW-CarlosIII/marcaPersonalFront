@@ -18,9 +18,15 @@ function LandingPage() {
                 <div className="col-12">
                     <h1 className="fw-semibold text-uppercase display-1 text-white">marca personal</h1>
                     <h5 className="text-white mt-3 mb-4">Un lugar donde podrás compartir, visualizar y editar los proyectos realizados durante el curso académico.</h5>
-                    <div>
-                        <a href="#" className="btn btn-primary">¡Quiero registrarme!</a>
-                    </div>
+                    <a href="#contacto">
+                        <button className="button-82-pushable" role="button">
+                            <span className="button-82-shadow"></span>
+                            <span className="button-82-edge"></span>
+                            <span className="button-82-front text">
+                                ¡Quiero registrarme!
+                            </span>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -163,10 +169,16 @@ function LandingPage() {
                     </div>
                 </div>
                 <div className="col-12 d-flex justify-content-center">
-                    <button type="button" className="mt-4 btn btn-primary d-flex justify-content-center gap-1">
-                        ¡Quiero ver más!
-                        <AddIcon></AddIcon>
-                    </button>
+                    <a href="#">
+                        <button className="button-82-pushable mt-4 d-flex justify-content-center gap-1" role="button">
+                            <span className="button-82-shadow"></span>
+                            <span className="button-82-edge"></span>
+                            <span className="button-82-front text">
+                                Ver más proyectos
+                                <AddIcon></AddIcon>
+                            </span>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -177,7 +189,7 @@ function LandingPage() {
             <div className="row mb-5">
                 <div className="col-12 text-center">
                     <div className="mb-4">
-                        <h1 className="mb-3 display-4 fw-semibold">Anímate a registrarte</h1>
+                        <h1 className="mb-3 display-4 fw-semibold">Anímate a compartir</h1>
                         <p className="mb-3">Aquí podrás tener el reconocimiento que tus proyectos necesitan.</p>
                     </div>
                 </div>
