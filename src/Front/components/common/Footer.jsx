@@ -14,7 +14,7 @@ function FooterComponent() {
                 <div className="container">
                     <div className="row g-4">
                         <div className="col-12 col-lg-4">
-                            <a href="#"><img src={logo} alt="" className='mb-3' id="footer-icon"/></a>
+                            <a href="/"><img src={logo} alt="" className='mb-3' id="footer-icon"/></a>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi earum atque consequuntur suscipit.</p>
                             <div className="social-links d-flex gap-2">
                                 <a href=""><FacebookIcon></FacebookIcon></a>
@@ -44,7 +44,7 @@ function FooterComponent() {
                             <p className="mb-0">Copyrights all rights reserved</p>
                         </div>
                         <div className="col-auto">
-                            <p className="mb-0">Designed by <a href='#'>CIFP Carlos III</a></p>
+                            <p className="mb-0">Designed by <a href='/'>CIFP Carlos III</a></p>
                         </div>
                     </div>
                 </div>
