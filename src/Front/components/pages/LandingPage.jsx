@@ -108,7 +108,7 @@ function LandingPage() {
                 </div>
             </div>
             <div className="row g-4 mb-4">
-                <div className="col-12 col-md-6" id="prueba">
+                <div className="col-12 col-md-6">
                     <div className="last-post d-flex shadow">
                         <div className="img-last-post">
                             <img src={jugadores} alt=""/>
