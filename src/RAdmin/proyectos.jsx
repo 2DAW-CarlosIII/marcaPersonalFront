@@ -17,7 +17,7 @@ import { useMediaQuery } from '@mui/material';
 
 const proyectoFilters = [
     <TextInput source="q" label="Search" alwaysOn />,
-    <ReferenceInput source="docente_id" label="User" reference="users" />
+    // <ReferenceInput source="docente_id" label="User" reference="users" />
 ];
 
 export const ProyectoList = () => {
@@ -26,17 +26,17 @@ export const ProyectoList = () => {
     <List filters={proyectoFilters} >
       {isSmall ? (
         <SimpleList
-          primaryText="%{nombre}"
+          primaryText={(record) => record.nombre}
           secondaryText={(record) => record.metadatos}
-          tertiaryText="%{url_github}"
-          linkType={(record) => (record.canEdit ? 'edit' : 'show')}
+          tertiaryText={(record) => record.url_github}
+          //linkType={(record) => (record.canEdit ? 'edit' : 'show')}
         >
           <EditButton />
         </SimpleList>
       ) : (
         <Datagrid bulkActionButtons={false}>
           <TextField source="id" />
-          <ReferenceField source="docente_id" reference="users" />
+          {/* <ReferenceField source="docente_id" reference="users" /> */}
           <TextField source="nombre" />
           <TextField source="metadatos" />
           <TextField source="url_github" />
@@ -56,7 +56,7 @@ export const ProyectoEdit = () => (
     <Edit title={<ProyectoTitle />}>
     <SimpleForm>
         <TextInput source="id" disabled />
-        <ReferenceInput source="docente_id" reference="users" />
+        {/* <ReferenceInput source="docente_id" reference="users" /> */}
         <TextInput source="nombre" />
         <TextInput source="metadatos" />
         <TextInput source="url_github" />
@@ -67,7 +67,7 @@ export const ProyectoEdit = () => (
 export const ProyectoCreate = () => (
     <Create>
         <SimpleForm>
-          <ReferenceInput source="docente_id" reference="users" />
+          {/* <ReferenceInput source="docente_id" reference="users" /> */}
           <TextInput source="nombre" />
           <TextInput source="metadatos" />
           <TextInput source="url_github" />
