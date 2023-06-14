@@ -27,11 +27,15 @@ function ProyectosView() {
                         </div>
                     </div>
 
-                    <div className="container mb-4" id="nav-proyectos">
+                    <div className="row mb-4" id="nav-proyectos">
                         <NavTabComponent></NavTabComponent>
                     </div>
 
-                    <div className="row g-3 mb-5">
+                    <div className="row mb-4">
+                        FILTER
+                    </div>
+
+                    <div className="row g-3 mb-5 text-white">
                         <div className="col-12 col-md-4">
                             <div className="container-imagen">
                                 <img src={escaleras} alt="" />

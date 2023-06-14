@@ -12,7 +12,7 @@ function NavbarComponent() {
   return (
     <Navbar style={{backgroundColor: 'var(--grey700)'}} expand="lg" fixed="top" data-bs-theme="dark">
       <Container fluid>
-        <Navbar.Brand href="#">
+        <Navbar.Brand href="/">
           <div style={{width: 'auto', height: '40px'}}>
             <img src={logo} alt="" style={{width: '100%', height: '100%'}}/>
           </div>
@@ -24,7 +24,7 @@ function NavbarComponent() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Los proyectos</Nav.Link>
+            <Nav.Link href="/proyectos">Los proyectos</Nav.Link>
             <NavDropdown title="Categorías" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Profesores</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
