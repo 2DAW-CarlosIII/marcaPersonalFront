@@ -31,10 +31,6 @@ function ProyectosView() {
                         <NavTabComponent></NavTabComponent>
                     </div>
 
-                    <div className="row mb-4">
-                        FILTER
-                    </div>
-
                     <div className="row g-3 mb-5 text-white">
                         <div className="col-12 col-md-4">
                             <div className="container-imagen">
